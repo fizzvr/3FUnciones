@@ -9,6 +9,53 @@
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="3funciones.js"></script>
     <script type="text/javascript" src="objeto.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function() {
+            // CLICK FUNCION 1
+            $("#cmd_funcion1").click(function(){
+                var cadenacar = $("#valor_cadena").val();
+                if(cadenacar == ""){
+                    alert("Por favor ingresa una cadena de texto!");
+                    return false;
+                }
+                 //Orientandome a obejetos
+                var nuevaCadena = new CADENA(cadenacar);
+                var result = nuevaCadena.tresfunciones(1);
+                alert(result);
+            });
+            // CLICK FUNCION 2
+               $("#cmd_funcion2").click(function(){
+                var cadenacar = $("#valor_cadena").val();
+                if(cadenacar == ""){
+                    alert("Por favor ingresa una cadena de texto!");
+                    return false;
+                }
+                 //Orientandome a obejetos
+                var nuevaCadena = new CADENA(cadenacar);
+                var result = nuevaCadena.tresfunciones(2);
+                alert(result);
+            });
+            // CLICK FUNCION 1
+                $("#cmd_funcion3").click(function(){
+                var cadenacar = $("#valor_cadena").val();
+                if(cadenacar == ""){
+                    alert("Por favor ingresa una cadena de texto!");
+                    return false;
+                }
+                 //Orientandome a obejetos
+                var nuevaCadena = new CADENA(cadenacar);
+                var result = nuevaCadena.tresfunciones(3);
+                alert(result);
+            });
+        });
+    </script>
+	<style>
+		body {
+			font-family: "Inconsolata";
+			font-size: 20px;
+			background: #f8f8f8;
+		}
+	</style>
 </head>
 <body>
 <section class="intro">
@@ -17,7 +64,7 @@
 					<div class="col-md-8 col-md-offset-2">
 						<div class="panel panel-default" style="margin-top:100px;">
 						    <div class="panel-heading">
-                               <h2 class="text-center">3 Funciones Javascript - CADENAS INVERTIDAS</h2>
+                               <h2 class="text-center">3 Funciones Javascript - CADENAS</h2>
                                 <ul>
                                     <li>Invierta una cadena de caracteres. </li>
                                     <li>Invierta cada palabra en una cadena. </li>
